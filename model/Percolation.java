@@ -1,3 +1,4 @@
+package model;
 /*
  *****************************************************************************
  *  Name: Erdinc Pinar
@@ -6,7 +7,6 @@
  ****************************************************************************
  */
 
-import edu.princeton.cs.algs4.StdRandom;
 import edu.princeton.cs.algs4.WeightedQuickUnionUF;
 
 
@@ -81,24 +81,4 @@ public class Percolation {
         return wquUF.connected(topnode, bottomnode);
     }
 
-
-    public static void main(String[] args) {
-        //StdRandom rand = new StdRandom();
-        int k = 10;
-        Percolation grid = new Percolation(k);
-        int i = 0;
-        while (!grid.percolates()) {
-            int row = StdRandom.uniform(k);
-            int col = StdRandom.uniform(k);
-            System.out.println(row);
-            System.out.println(col);
-            System.out.println(grid.newgrid[row][col]);
-            grid.open(row, col);
-            System.out.println(grid.newgrid[row][col]);
-            System.out.println(i);
-            i++;
-            //System.out.println(grid.percolates())
-        }
-
-    }
 }

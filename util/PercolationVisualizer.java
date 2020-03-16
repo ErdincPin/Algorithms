@@ -1,4 +1,4 @@
-/******************************************************************************
+package util; /******************************************************************************
  *  Compilation:  javac PercolationVisualizer.java
  *  Execution:    java PercolationVisualizer input.txt
  *  Dependencies: Percolation.java
@@ -18,6 +18,7 @@
 
 import edu.princeton.cs.algs4.In;
 import edu.princeton.cs.algs4.StdDraw;
+import model.Percolation;
 
 import java.awt.Font;
 
